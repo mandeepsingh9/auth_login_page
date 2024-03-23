@@ -37,7 +37,8 @@ const Login = () => {
     
         if (!response.ok) {
             toast.error("Invalid User")
-            throw new Error('Failed to authenticate');
+            //throw new Error('Failed to authenticate');
+            return;
         }
     
         const data = await response.json();
